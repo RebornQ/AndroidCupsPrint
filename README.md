@@ -2,15 +2,13 @@
 
 Port of cups4j to Android.
 
-See it live on the Play Store: https://play.google.com/store/apps/details?id=io.github.benoitduffez.cupsprint  
-See it live on f-droid.org: https://f-droid.org/repository/browse/?fdid=io.github.benoitduffez.cupsprint
+See it live on the Github: [https://github.com/RebornQ/AndroidCupsPrint/releases](https://github.com/RebornQ/AndroidCupsPrint/releases)
 
 ## Original work
 
-Original work was created by Jon Freeman, it included an app that reacts to the SEND intent to print documents.
+Original work was created by [BenoitDuffez](https://github.com/BenoitDuffez), it included an app that reacts to the SEND intent to print documents.
 
-Original work can be found here: http://mobd.jonbanjo.com/jfcupsprint/default.php  
-Original work found via: http://android.stackexchange.com/q/43774/63883
+Original work can be found here: [https://github.com/BenoitDuffez/AndroidCupsPrint](https://github.com/BenoitDuffez/AndroidCupsPrint)
 
 ## Modifications
 
@@ -37,16 +35,29 @@ As per the code, the following has been added:
 * `CupsService.java`: handles Android framework connectivity and print jobs management
 * removed all legacy code (pre API 19)
 
+## How to use
+**Please be sure you have installed the app.**
+### Add printer service
+1. Go to setting and find this.![add_printer_01](/images/add_printer_01.jpg)
+2. Choose `Add printer`![add_printer_02](/images/add_printer_02.jpg)
+3. Fill your printer information.![add_printer_03_04](/images/add_printer_03_04.jpg)
+4. Enjoy it.
+
+### Remove printer service
+1. Open the app in launcher.![remove_printer_01](/images/remove_printer_01.jpg)
+2. Click the item to remove the printer.![remove_printer_02](/images/remove_printer_02.jpg)
+
+
+
 # Contribute
 
 This app wasn't widely tested, it needs your help for better quality. If you find bugs, either submit a new issue or fork/fix/submit PR.
 
 Please use the `develop` branch for testing and troubleshooting.
 
-Also, you can subscribe on the Play Store to receive beta versions of this app: https://play.google.com/apps/testing/io.github.benoitduffez.cupsprint
-
 ## Branches
 
+* The `p_support` branch was created in an effort to support Android P.
 * The `master` branch is code published to Google Play.
 * The `jonbanjo` branch is the app containing all the legacy code written by Jon Freeman
 * The `fdroid` branch was created in an effort to be compatible with f-droid.org; however, this effort was merged into develop and is intended to be merged into master.
